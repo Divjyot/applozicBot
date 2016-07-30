@@ -15,7 +15,25 @@
 		29217EEE1D4C9A5900C8026B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29217EEC1D4C9A5900C8026B /* LaunchScreen.storyboard */; };
 		29217EF71D4C9BA500C8026B /* Wit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 29217EF51D4C9BA500C8026B /* Wit.bundle */; };
 		29217EF81D4C9BA500C8026B /* Wit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29217EF61D4C9BA500C8026B /* Wit.framework */; };
+		29217EFB1D4C9C4400C8026B /* Applozic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29217EFA1D4C9C4400C8026B /* Applozic.framework */; };
+		29217EFC1D4C9C6100C8026B /* Applozic.framework in Resources */ = {isa = PBXBuildFile; fileRef = 29217EFA1D4C9C4400C8026B /* Applozic.framework */; };
+		29217EFD1D4C9C6B00C8026B /* Applozic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29217EFA1D4C9C4400C8026B /* Applozic.framework */; };
+		29217EFE1D4C9C6B00C8026B /* Applozic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29217EFA1D4C9C4400C8026B /* Applozic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		29217EFF1D4C9C6B00C8026B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				29217EFE1D4C9C6B00C8026B /* Applozic.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		29217EDB1D4C9A5900C8026B /* applozicBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = applozicBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +48,7 @@
 		29217EEF1D4C9A5900C8026B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29217EF51D4C9BA500C8026B /* Wit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Wit.bundle; sourceTree = "<group>"; };
 		29217EF61D4C9BA500C8026B /* Wit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Wit.framework; sourceTree = "<group>"; };
+		29217EFA1D4C9C4400C8026B /* Applozic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Applozic.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29217EFD1D4C9C6B00C8026B /* Applozic.framework in Frameworks */,
+				29217EFB1D4C9C4400C8026B /* Applozic.framework in Frameworks */,
 				29217EF81D4C9BA500C8026B /* Wit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,11 +100,20 @@
 		29217EDE1D4C9A5900C8026B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				29217EF91D4C9C1100C8026B /* Applozic */,
 				29217EF51D4C9BA500C8026B /* Wit.bundle */,
 				29217EF61D4C9BA500C8026B /* Wit.framework */,
 				29217EDF1D4C9A5900C8026B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		29217EF91D4C9C1100C8026B /* Applozic */ = {
+			isa = PBXGroup;
+			children = (
+				29217EFA1D4C9C4400C8026B /* Applozic.framework */,
+			);
+			name = Applozic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +126,7 @@
 				29217ED71D4C9A5900C8026B /* Sources */,
 				29217ED81D4C9A5900C8026B /* Frameworks */,
 				29217ED91D4C9A5900C8026B /* Resources */,
+				29217EFF1D4C9C6B00C8026B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29217EFC1D4C9C6100C8026B /* Applozic.framework in Resources */,
 				29217EEE1D4C9A5900C8026B /* LaunchScreen.storyboard in Resources */,
 				29217EEB1D4C9A5900C8026B /* Assets.xcassets in Resources */,
 				29217EF71D4C9BA500C8026B /* Wit.bundle in Resources */,
